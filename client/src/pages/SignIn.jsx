@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { signInAction, clearMessage } from "../redux/actions/authActions";
-import { AiFillGithub } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 import { MdOutlineAdminPanelSettings } from "react-icons/md";
 import ButtonLoadingSpinner from "../components/loader/ButtonLoadingSpinner";
@@ -170,15 +169,6 @@ const SignIn = () => {
           </div>
         </form>
         <span className="flex items-center justify-center py-4 text-sm text-gray-600 ">
-          <a
-            href="https://github.com/nz-m/SocialEcho"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center hover:text-blue-500"
-          >
-            <AiFillGithub className="mr-2 h-5 w-5" />
-            <span>GitHub</span>
-          </a>
           <Link
             to="/admin"
             className="ml-8 flex items-center hover:text-blue-500"
